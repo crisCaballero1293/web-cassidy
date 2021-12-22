@@ -84,6 +84,21 @@ main {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.mainTxt {
+  width: 100%;
+  display: block;
+}
+
+.mainTxt h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: start;
+  padding-left: 2em;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
 .seccionUno {
   width: 700px;
   margin: auto;
@@ -140,11 +155,12 @@ main {
   height: 10px;
   border-top: 1px solid #fff;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .separador1 {
   width: 50%;
-  height: 100px;
+  height: 80px;
   border-top: 1px solid #fff;
   margin: auto;
   margin-top: 100px;
@@ -153,7 +169,7 @@ main {
 .seccionTres {
   width: 700px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 60px;
   border: 2px solid #ffde59;
 }
 
@@ -161,6 +177,59 @@ main {
   width: 100%;
   height: 446px;
 }
+
+.seccionCuatro {
+  width: 100%;
+}
+
+.newsLet {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.newsLet h3 {
+  color: #fff;
+  font-weight: 300;
+}
+
+.newsLet label {
+  color: #fff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.inputBox {
+  height: 25px;
+  color: #000000;
+  background-color: #ffde59;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.inputBtn {
+  width: 100px;
+  height: 35px;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 12px;
+  background-color: #ffde59;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.inputBtn:hover {
+  background-color: #fff;
+  color: gray;
+}
+
 /*----------------------------------------------------*/
 
 /*-------------ESTILOS FOOTER------------------------*/
@@ -242,6 +311,11 @@ footer p {
   .body__Front {
     width: 100%;
     margin-top: -60px;
+  }
+
+  .mainTxt h2 {
+    text-align: center;
+    padding-left: 0;
   }
 
   .seccionUno {
