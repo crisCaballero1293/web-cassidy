@@ -1,3 +1,7 @@
+:root {
+  --font: "Dosis", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -71,8 +75,8 @@ li a:hover {
 /*----------------------------------------------------*/
 
 /*-------------CAPA SUPERIOR BODY------------------------*/
-.body__Front {
-  width: 80%;
+.bodyMasc {
+  width: 90%;
   margin-top: -5px;
   margin: auto;
   background-color: rgb(0, 0, 0, 0.4);
@@ -85,106 +89,101 @@ main {
 }
 
 .mainTxt {
-  width: 100%;
-  display: block;
+  text-align: center;
+  font-family: var(--font);
+  letter-spacing: -1px;
+  font-weight: 400;
 }
 
 .mainTxt h2 {
   color: #fff;
   font-weight: 300;
   font-size: 50px;
-  text-align: start;
-  padding-left: 2em;
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding: 60px 0;
 }
 
-.seccionUno {
-  width: 700px;
+.seccionUno__gridContainer {
+  max-width: 900px;
+  height: 900px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
 }
 
-.seccionDos {
-  width: 700px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-  padding-bottom: 60px;
+.item1 {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+}
+.item2 {
+  background-image: url(../img/2.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+.item3 {
+  background-image: url(../img/3.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+.item4 {
+  background-image: url(../img/4.jpg);
+  background-size: cover;
+  background-position-y: center;
 }
 
-.card1 {
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.cardLink:hover {
+  color: #ffde59;
+}
+
+.cardLink__separador {
+  height: 2px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+.itemTxt {
+  width: 300px;
+  height: 350px;
   position: relative;
 }
 
-.card1 img {
-  width: 345px;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 5px;
-  border: 1px solid rgb(73, 59, 38);
-  transition: all 0.15s ease-in-out;
-}
-
-.card1 img:hover {
-  transform: scale(0.97, 0.96);
-}
-
-.card1 h3 {
+.cardLink {
+  font-family: var(--font);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 350;
+  font-size: 30px;
   position: absolute;
-  bottom: 20px;
-  left: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 25px;
-  font-weight: 300;
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff;
-  padding-bottom: 5px;
-}
-
-.card1 h3:hover {
-  color: #ffde59;
-  border-color: #ffde59;
-}
-
-.separador {
-  width: 50%;
-  height: 10px;
-  border-top: 1px solid #fff;
-  margin: auto;
-  padding-bottom: 50px;
-}
-
-.separador1 {
-  width: 50%;
-  height: 80px;
-  border-top: 1px solid #fff;
-  margin: auto;
-  margin-top: 100px;
+  bottom: 0px;
+  width: 100%;
 }
 
 .seccionTres {
-  width: 700px;
-  margin: auto;
-  margin-top: 60px;
-  border: 2px solid #ffde59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .video {
   width: 100%;
-  height: 446px;
-}
-
-.seccionCuatro {
-  width: 100%;
+  max-width: 670px;
+  height: 500px;
+  border-radius: 2px;
+  border: 0.5px solid #fff;
 }
 
 .newsLet {
-  width: 80%;
-  height: 150px;
+  width: 330px;
+  height: 250px;
+  padding: 50px 0;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -194,40 +193,77 @@ main {
 
 .newsLet h3 {
   color: #fff;
+  width: 100%;
   font-weight: 300;
+  font-size: 21px;
+  font-family: var(--font);
+  text-align: center;
 }
 
 .newsLet label {
   color: #fff;
+  width: 95%;
   font-weight: 300;
   font-size: 18px;
 }
 
 .inputBox {
+  width: 100%;
   height: 25px;
-  color: #000000;
-  background-color: #ffde59;
-  border: none;
-  border-radius: 6px;
-  padding: 10px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.253);
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 15px 5px;
+  font-weight: 300;
 }
 
 .inputBtn {
-  width: 100px;
+  width: 100%;
   height: 35px;
   border: none;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  border-radius: 12px;
-  background-color: #ffde59;
+  font-family: var(--font);
+  border-radius: 2px;
+  background-color: #fff;
   cursor: pointer;
   font-size: 20px;
   font-weight: 300;
-  transition: 0.3s;
+  margin-top: 8px;
 }
 
 .inputBtn:hover {
-  background-color: #fff;
-  color: gray;
+  background-color: #ffde59;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social {
+  width: 350px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.socialTxt p {
+  font-family: var(--font);
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.socialIcon {
+  display: block;
+  font-size: 27px;
+  color: #fff;
+  padding: 12px;
+}
+
+.socialIcon:hover {
+  color: #ffde59;
 }
 
 /*----------------------------------------------------*/
@@ -247,130 +283,6 @@ footer p {
   width: 100%;
   text-align: center;
   padding-top: 75px;
-}
-
-/*----------------------------------------------------*/
-
-/*-------------ESTILOS RESPONSIVE------------------------*/
-
-@media only screen and (max-width: 850px) {
-  .grid__container {
-    width: 100%;
-    height: 800px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "header"
-      "nav";
-  }
-
-  /*-------------ESTILOS HEADER------------------------*/
-
-  .header {
-    grid-area: header;
-    height: 500px;
-  }
-
-  .banner {
-    height: 500px;
-  }
-
-  .logo__Container {
-    top: 25%;
-  }
-
-  /*-----------------------------------------------------*/
-
-  /*-------------ESTILOS NAV------------------------*/
-
-  .nav {
-    margin-top: 20px;
-    grid-area: nav;
-    position: relative;
-    height: 220px;
-    background-color: black;
-  }
-
-  .nav li a:hover {
-    color: #ffde59;
-  }
-
-  .menu {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  /*-----------------------------------------------------*/
-
-  /*-------------ESTILOS MAIN------------------------*/
-
-  .body__Front {
-    width: 100%;
-    margin-top: -60px;
-  }
-
-  .mainTxt h2 {
-    text-align: center;
-    padding-left: 0;
-  }
-
-  .seccionUno {
-    width: 100%;
-    flex-direction: column;
-    width: auto;
-    align-items: center;
-  }
-
-  .seccionUno__hijo1 {
-    padding-bottom: 10px;
-  }
-
-  .seccionDos__hijo3 {
-    padding-bottom: 10px;
-  }
-
-  .seccionDos {
-    width: 100%;
-    flex-direction: column;
-    width: auto;
-    align-items: center;
-  }
-
-  .card1 {
-    margin: auto;
-    position: relative;
-    padding-bottom: 35px;
-  }
-
-  .card1 img {
-    width: 350px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 2px;
-  }
-
-  .card1 h3 {
-    position: absolute;
-    bottom: 53px;
-    left: 10px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: 5px;
-  }
-
-  .seccionTres {
-    width: 450px;
-  }
-
-  /*----------------------------------------------------*/
 }
 
 /*----------------------------------------------------*/

@@ -5,12 +5,22 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ------------------STYLES----------------------- -->
      <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/responsive.css">
+     <!-- -------------------------------------------------- -->
+     <!-- ------------------ICONS-------------------------- -->
      <link rel="shortcut icon" href="img/faviconCassidy.png" type="image/x-icon">
+     <link href="https://file.myfontastic.com/p2HNH4rHYHfiPwtcdKneBn/icons.css" rel="stylesheet">
+     <!-- -------------------------------------------------- -->
+     <!-- ------------------ANIMACIONES ------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!-- -------------------------------------------------- -->
+     <!-- ---------------------FONTS---------------------- -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Philosopher&family=Quattrocento&family=Vidaloka&display=swap"
-          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&display=swap" rel="stylesheet">
+     <!-- -------------------------------------------------- -->
      <title>Home</title>
 </head>
 
@@ -20,7 +30,7 @@
           <header class="header">
                <img class="banner" src="img/b2.jpg" alt="imagen_Desierto">
                <div class="logo__Container">
-                    <img class="logo" src="img/logo.png" alt="Logo">
+                    <img class="logo animate__animated animate__zoomIn" src="img/logo.png" alt="Logo">
                </div>
           </header>
           <nav class="nav">
@@ -33,70 +43,76 @@
                </ul>
           </nav>
      </div>
-
      <main class="main">
-          <div class="body__Front">
+          <div class="bodyMasc">
                <div class="mainTxt">
-                    <h2>ULTIMAS NOTICIAS</h2>
+                    <h2>ÚLTIMAS NOTICIAS</h2>
                </div>
                <section class="seccionUno">
-                    <div class="seccionUno__hijo1">
-                         <a class="card1" href="#">
-                              <img class="card1__img hijo_1" src="img/1.jpg" alt="Imagen sobre la banda">
-                              <h3>Proximas presentaciones</h3>
-                         </a>
-                    </div>
-                    <div class="seccionUno__hijo2">
-                         <a class="card1" href="#">
-                              <img class="card1__img hijo_2" src="img/3.jpg" alt="Imagen sobre la banda">
-                              <h3>Merch</h3>
-                         </a>
-                    </div>
-               </section>
-
-               <section class="seccionDos">
-                    <div class="seccionDos__hijo3">
-                         <a class="card1" href="#">
-                              <img class="card1__img hijo_3" src="img/4.jpg" alt="Imagen sobre la banda">
-                              <h3>Sesiones en vivo</h3>
-                         </a>
-                    </div>
-                    <div class="seccionDos__hijo4">
-                         <a class="card1" href="#">
-                              <img class="card1__img hijo_4" src="img/2.jpg" alt="Imagen sobre la banda">
-                              <h3>Press KIT</h3>
-                         </a>
+                    <div class="seccionUno__gridContainer">
+                         <div class="item item1">
+                              <div class="itemTxt">
+                                   <a class="cardLink" href="#">Proximas presentaciones
+                                        <div class="cardLink__separador"></div>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="item item2">
+                              <div class="itemTxt">
+                                   <a class="cardLink" href="#">Merch oficial<div class="cardLink__separador"></div>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="item item3">
+                              <div class="itemTxt">
+                                   <a class="cardLink" href="#">Sesiones en vivo<div class="cardLink__separador"></div>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="item item4">
+                              <div class="itemTxt">
+                                   <a class="cardLink" href="#">Press kit<div class="cardLink__separador"></div></a>
+                              </div>
+                         </div>
                     </div>
                </section>
                <div class="separador">
                </div>
                <div class="mainTxt">
-                    <h2>ULTIMOS LANZAMIENTOS</h2>
+                    <h2>ÚLTIMOS LANZAMIENTOS</h2>
                </div>
                <section class="seccionTres">
-                    <div class="mediaContainer">
-                         <iframe class="video" src="https://www.youtube.com/embed/_sButYrwG1E"
-                              title="YouTube video player" frameborder="0"
-                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                              allowfullscreen></iframe>
-                    </div>
+                    <iframe class="video" src="https://www.youtube.com/embed/_sButYrwG1E" title="YouTube video player"
+                         frameborder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowfullscreen></iframe>
                </section>
-               <div class="separador1">
-               </div>
                <section class="seccionCuatro">
                     <div class="newsLet">
                          <h3>¡SUSCRIBETE A NUESTRO NEWSLETTER!</h3>
-                         <label>email: <input type="text" placeholder="Ingresa tu email" class="inputBox"></label>
-                         <input type="submit" class="inputBtn">
+                         <form action="/" method="post">
+                              <label>Email:</label>
+                              <input type="text" placeholder="Ingresa tu email" class="inputBox">
+                              <input type="submit" class="inputBtn" value="Suscribirme">
+                         </form>
+                    </div>
+               </section>
+               <section class="seccionCinco">
+                    <div class="socialTxt">
+                         <p>Síguenos en:</p>
+                    </div>
+                    <div class="social">
+                         <a href="#"><span class="icon-facebook socialIcon"></span></a>
+                         <a href="#"><span class="icon-instagram socialIcon"></span></a>
+                         <a href="#"><span class="icon-twitter socialIcon"></span></a>
+                         <a href="#"><span class="icon-youtube socialIcon"></span></a>
                     </div>
                </section>
           </div>
      </main>
-
      <footer>
           <p>Copyright &copy; 2021 - Powered by Cris Caballero</p>
      </footer>
-
 </body>
 
 </html>
