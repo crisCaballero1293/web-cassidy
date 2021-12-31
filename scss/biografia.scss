@@ -1,0 +1,26 @@
+/* ----------------------------------- */
+
+.content {
+  max-width: 950px;
+  margin: auto;
+  text-align: justify;
+  .parrafo {
+    color: #fff;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "Dosis", sans-serif;
+  }
+}
+
+.imgContainer {
+  margin-top: 50px;
+  img {
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #fff;
+    margin-top: 35px;
+    display: block;
+    margin: auto;
+  }
+}

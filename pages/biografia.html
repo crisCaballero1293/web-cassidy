@@ -5,18 +5,24 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- ------------------STYLES----------------------- -->
      <link rel="stylesheet" href="../css/styles.css">
-     <link rel="stylesheet" href="../css/bio.css">
-     <link rel="shortcut icon" href="../img/faviconCassidy.png" type="image/x-icon">
-
-     <!-- BOOTSTRAP -->
-
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-     <!-- ----------------------------- -->
-
-     <title>Biografía</title>
+     <link rel="stylesheet" href="../css/responsive.css">
+     <link rel="stylesheet" href="../css/biografia.css">
+     <!-- -------------------------------------------------- -->
+     <!-- ------------------ICONS-------------------------- -->
+     <link rel="shortcut icon" href="img/faviconCassidy.png" type="image/x-icon">
+     <link href="https://file.myfontastic.com/p2HNH4rHYHfiPwtcdKneBn/icons.css" rel="stylesheet">
+     <!-- -------------------------------------------------- -->
+     <!-- ------------------ANIMACIONES ------------------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!-- -------------------------------------------------- -->
+     <!-- ---------------------FONTS---------------------- -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&display=swap" rel="stylesheet">
+     <!-- -------------------------------------------------- -->
+     <title>Home</title>
 </head>
 
 <body>
@@ -25,7 +31,7 @@
           <header class="header">
                <img class="banner" src="../img/b2.jpg" alt="imagen_Desierto">
                <div class="logo__Container">
-                    <img class="logo" src="../img/logo.png" alt="Logo">
+                    <img class="logo animate__animated animate__zoomIn" src="../img/logo.png" alt="Logo">
                </div>
           </header>
           <nav class="nav">
@@ -39,56 +45,59 @@
           </nav>
      </div>
      <main class="main">
-          <div class="body__Front">
-               <div class="content__container">
-                    <h2 class="title">BIO:</h2>
-                    <div class="parrafo_container">
-                         <p class="parrafo">
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vero odio blanditiis vitae
-                              natus nobis voluptas obcaecati soluta, voluptates magni, deserunt assumenda laboriosam
-                              commodi quis beatae voluptatem atque, excepturi quod!
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum ducimus tenetur
-                              dolorem vel! Inventore, aspernatur consequuntur dolor, deleniti necessitatibus iure ad
-                              quos harum id saepe aliquid distinctio deserunt dolore?
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nobis qui excepturi
-                              deleniti, quam nesciunt fuga magnam ex in neque autem magni molestiae animi non. Fugiat
-                              ipsam unde culpa vitae.
-                         </p>
-                    </div>
-
-                    <!-- Contenedor IMG -->
-                    <div class="container-md">
-                         <img src="../img/b3.jpg" alt="imagen_banda">
-                    </div>
-                    <!--      <div class="img_container">
-                        
-                    </div> -->
-                    <div class="btn_container">
-                         <button type="button" class="btn btn-secondary btn-lg"> <a href="#">EPK</a> </button>
-                         <button type="button" class="btn btn-secondary btn-lg"> <a href="#">RIDER</a> </button>
-                    </div>
+          <div class="bodyMasc">
+               <div class="mainTxt">
+                    <h2>BÍO:</h2>
                </div>
+               <section class="content">
+                    <p class="parrafo">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos vero odio blanditiis vitae
+                         natus nobis voluptas obcaecati soluta, voluptates magni, deserunt assumenda laboriosam
+                         commodi quis beatae voluptatem atque, excepturi quod!
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rerum ducimus tenetur
+                         dolorem vel! Inventore, aspernatur consequuntur dolor, deleniti necessitatibus iure ad
+                         quos harum id saepe aliquid distinctio deserunt dolore?
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nobis qui excepturi
+                         deleniti, quam nesciunt fuga magnam ex in neque autem magni molestiae animi non. Fugiat
+                         ipsam unde culpa vitae.
+                    </p>
+               </section>
+               <div class="imgContainer">
+                    <img src="../img/b3.jpg" alt="imagen_banda">
+               </div>
+               <section class="btn">
+                    <button type="button" class="btn btn-secondary btn-lg"> <a href="#">EPK</a> </button>
+                    <button type="button" class="btn btn-secondary btn-lg"> <a href="#">RIDER</a> </button>
+               </section>
                <div class="separador1">
                </div>
                <section class="seccionCuatro">
                     <div class="newsLet">
                          <h3>¡SUSCRIBETE A NUESTRO NEWSLETTER!</h3>
-                         <label>email: <input type="text" placeholder="Ingresa tu email" class="inputBox"></label>
-                         <input type="submit" class="inputBtn">
+                         <form action="/" method="post">
+                              <label>Email:</label>
+                              <input type="text" placeholder="Ingresa tu email" class="inputBox">
+                              <input type="submit" class="inputBtn" value="Suscribirme">
+                         </form>
                     </div>
                </section>
-               <div class="social_container">
-                    <span>Facebook</span>
-                    <span>Instagram</span>
-                    <span>YouTube</span>
-               </div>
+               <section class="seccionCinco">
+                    <div class="socialTxt">
+                         <p>Síguenos en:</p>
+                    </div>
+                    <div class="social">
+                         <a href="#"><span class="icon-facebook socialIcon"></span></a>
+                         <a href="#"><span class="icon-instagram socialIcon"></span></a>
+                         <a href="#"><span class="icon-twitter socialIcon"></span></a>
+                         <a href="#"><span class="icon-youtube socialIcon"></span></a>
+                    </div>
+               </section>
+          </div>
           </div>
      </main>
-
      <footer>
           <p>Copyright &copy; 2021 - Powered by Cris Caballero</p>
      </footer>
-
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossorigin="anonymous"></script>
