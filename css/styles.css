@@ -1,5 +1,6 @@
 :root {
   --font: "Dosis", sans-serif;
+  --amarillo: #ffde59;
 }
 
 * {
@@ -69,6 +70,10 @@ li a {
 }
 
 li a:hover {
+  color: #ffde59;
+}
+
+.selector {
   color: #ffde59;
 }
 
