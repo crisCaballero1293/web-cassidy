@@ -8,8 +8,26 @@
   color: #fff;
   padding: 20px;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 200;
   font-family: "Dosis", sans-serif;
+}
+
+.integrantes {
+  color: #fff;
+  padding: 0 0 0 20px;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  list-style: none;
+}
+
+.integrantes h5 {
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+.integrantes li {
+  padding-bottom: 5px;
 }
 
 .imgContainer {
